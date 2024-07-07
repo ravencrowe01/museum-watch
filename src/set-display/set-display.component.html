@@ -1,0 +1,24 @@
+<div>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Avg (Top 3)</th>
+            <th>Avg (Top 10)</th>
+            <th>Avg (Top 25)</th>
+            <th>Avg (Top 50)</th>
+            <th>Avg (Top 100)</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let plushie of plushieStatistics;">
+                <td>{{ plushie.id }}</td>
+                <td>{{ plushie.name }}</td>
+                <td>{{ plushie.avgTop3 }}</td>
+                <td>{{ plushie.avgTop10 }}</td>
+                <td>{{ plushie.avgTop25 }}</td>
+                <td>{{ plushie.avgTop50 }}</td>
+                <td>{{ plushie.avgTop100 }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
